@@ -1,0 +1,24 @@
+{
+  "name": "programa-o",
+  "version": "1.0.0",
+  "description": "Conteúdo do Curso de Programador de Sistema.",
+  "main": "logo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dailson82/Programa-o.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Dailson82/Programa-o/issues"
+  },
+  "homepage": "https://github.com/Dailson82/Programa-o#readme",
+  "dependencies": {
+    "@inquirer/prompts": "^8.7.2"
+  }
+}
