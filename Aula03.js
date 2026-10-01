@@ -13,3 +13,5 @@ console.log("Bem vindo," + nome + "!");
 console.log(typeof idade);
 console.log(typeof idade_depois);
 console.log("Ano que vem vc terá " + idade_depois + "anos.");
+
+const nome = await input({message: "Qual é o seu nome?"});
