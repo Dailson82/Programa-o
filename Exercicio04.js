@@ -11,14 +11,23 @@ const pagamento = await select({
     ]
 })
 
+let valor_desconto = 0;
+
 switch (pagamento) {  
     case "pix":
-        console.log("Valor final: R$ " + (Total * 0.9).toFixed(2));
+        // console.log("valor de Desconto Pix") + (pagamento * 0.9);
+        valor_desconto = Total * 0.9
         break;
     case "cartao_credito":
-        console.log("Valor final: R$ " + Total.toFixed(2));
+        // console.log("Valor de Desconto cartão_credito");
+        valor_desconto = Total * 1
         break;
     case "cartao_debito":
-        console.log("Valor final: R$ " + (Total * 0.95).toFixed(2));
+        // console.log("Valor de Desconto cartão_debito" + (pagamento * 0.95));
+        valor_desconto = Total * 0.95
         break;
 }
+
+
+console.log("de acordo com a opção de pagamento");
+console.log(`o valor a ser pago é de ${valor_desconto}`);
